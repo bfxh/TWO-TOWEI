@@ -1,0 +1,16 @@
+# 每周一提依赖更新 PR：workflow 里用到的 actions。
+# 依赖升级自成 PR（PR 纪律：不与功能捆绑），单独 review / 回滚。
+# groups：全部 actions 合成一个 PR，防 Dependabot 把同一 action 的多个 ref 拆散
+# （用户 2026-09-28 实测教训：RUST-WL 工具链、ADV codeql 均被拆红过）。
+# cargo 生态 M1 加（当前无 Cargo.toml）。
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    groups:
+      actions:
+        patterns: ["*"]
