@@ -49,5 +49,5 @@
 ## 后置决策项（不阻塞）
 
 - WebGL2 降级路径（decisions D2）
-- LICENSE 已定：MIT（见 [NOTICE.md](../NOTICE.md)；与工作区其余仓一致）
+- LICENSE 已定：MIT OR Apache-2.0（见 [NOTICE.md](../NOTICE.md)；与工作区其余仓一致）
 - wasm 体积预算（首个可用版本目标值 M1 定）
